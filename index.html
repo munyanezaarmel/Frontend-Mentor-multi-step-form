@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      defer
+      src="https://kit.fontawesome.com/f6d0dfff92.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar start -->
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-steps">
+          <div class="numbers active one">1</div>
+          <div class="steps">
+            <p class="personal-paragraph">Step 1</p>
+            <h6 class="personal-heading">Your info</h6>
+          </div>
+        </div>
+        <div class="sidebar-steps">
+          <div class="numbers two">2</div>
+          <div class="steps">
+            <p class="personal-paragraph">Step 2</p>
+            <h3 class="personal-heading">Select plan</h3>
+          </div>
+        </div>
+        <div class="sidebar-steps">
+          <div class="numbers three">3</div>
+          <div class="steps">
+            <p class="personal-paragraph">Step 3</p>
+            <h3 class="personal-heading">Add-ons</h3>
+          </div>
+        </div>
+        <div class="sidebar-steps">
+          <div class="numbers four">4</div>
+          <div class="steps">
+            <p class="personal-paragraph">Step 4</p>
+            <h3 class="personal-heading">Summary</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Step 1 start -->
+      <section class="personal-infos">
+      <div class="personal-infos">
+        <h2 class="head-personal-infos">Personal info</h2>
+        <p class="personal-paragraph">Please provide your name, email address, and phone number.</p>
+        <form action="">
+          <label for=""> Name:</label><br />
+          <input type="text" placeholder="e.g. Stephen King" class="input-form" /><br />
+          <label for="">Email Address:</label><br />
+          <input type="text" placeholder="e.g. stephenking@lorem.com"class="input-form" /><br />
+          <label for=""> Phone Number:</label><br />
+          <input type="text" placeholder="e.g. +1 234 567 890"class="input-form" /><br />
+          <button type="submit" class="button-personal">next step</button>
+        </form>
+      </div>
+         </section>
+      <!-- Step 1 end -->
+      <section class="plan hidden">
+        <h2 class="head-personal-infos">Select your plan</h2>
+        <p class='personal-paragraph'>You have the option of monthly or yearly billing..</p>
+        <div class="icons-container">
+          <div class="archade-icon-text">
+            <div class="archade-icon icon-wrap">
+            <i class="fa-solid fa-gamepad"></i>
+               <h6>Archade</h6>
+            <p>$9/mo</p>
+            </div>
+          </div>
+          <div class="games-icon icon-wrap">
+            <i class="fa-solid fa-gamepad"></i>
+            <h6>Advanced</h6>
+            <p>$12/mo</p>
+          </div>
+          <div class="games-2-icon icon-wrap">
+            <i class="fa-solid fa-gamepad"></i>
+            <h6>Pro</h6>
+            <p>$15/mo</p>
+          </div>
+        </div>
+        <div class="toogle-section">
+          <p>yearly</p>
+          <label class="switch">
+  <input type="checkbox" class="checkbox">
+  <span class="slider round"></span>
+</label>
+<p>monthly</p>
+        </div>
+        <div class="plan-buttons">
+  <a href="#">Go back</a>
+        <button type="submit" class="button-plan ">next step</button>
+        </div>
+      </section>
+      <section class="adds-on hidden">
+       <h2 class="head-personal-infos">Pick add-ons</h2>
+        <p  class='personal-paragraph'>add-ons help enhance your gaming experience</p>
+        <div class="adds-borders">
+        <input type="checkbox" name="" id="" class="checkbox">
+      <div class="inside-text">
+        <h6 class="adds-small-headings">Online service</h6>
+        <p class='personal-paragraph'>Access to multiplayer games</p>
+      </div>
+      <p class="adds-small-paragraph">+$1/mo</p>
+        </div>
+        <div class="adds-borders">
+        <input type="checkbox" name="" id="" class="checkbox">
+      <div class="inside-text">
+        <h6 class="adds-small-headings">Larger Storage</h6>
+        <p class='personal-paragraph'>Extra 1TB of cloud store</p>
+      </div>
+      <p class="adds-small-paragraph">+$2/mo</p>
+        </div>
+         <div class="adds-borders">
+        <input type="checkbox" name="" id="" class="checkbox">
+      <div class="inside-text">
+        <h6 class="adds-small-headings">Customizable profile</h6>
+        <p class='personal-paragraph'>custom team on your profile</p>
+      </div>
+      <p class="adds-small-paragraph">+$2/mo</p>
+        </div>
+        <div class="plan-buttons">
+  <a href="#">Go back</a>
+        <button type="submit" class="button-plan ">next step</button>
+        </div>
+      </section>
+      <section class="finish hidden">
+         <h2 class="head-personal-infos">Finishing up</h2>
+        <p class='personal-paragraph'>Double check everything looks ok before confirming</p>
+         <div class="all-borders">
+        <div class="finish-borders">
+        <h6 class="adds-small-headings">Archade(monthly)</h6>
+      <p class="adds-small-paragraph">+$2/mo</p>
+        </div>
+          <div class="finish-borders">
+        <h6 class="adds-small-headings">Online Service</h6>
+      <p class="adds-small-paragraph">+$1/mo</p>
+        </div>
+          <div class="finish-borders">
+        <h6 class="adds-small-headings">Larger Storage</h6>
+      <p class="adds-small-paragraph">+$2/mo</p>
+        </div>
+        </div>
+            <div class="plan-buttons">
+  <a href="#">Go back</a>
+        <button type="submit" class="button-plan ">Confirm</button>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
