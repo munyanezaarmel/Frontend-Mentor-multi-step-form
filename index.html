@@ -97,41 +97,44 @@
          </section>
       <!-- Step 1 end -->
       <section class="plan hidden">
+        <div class="plan-container">
         <h2 class="head-personal-infos">Select your plan</h2>
         <p class='personal-paragraph'>You have the option of monthly or yearly billing..</p>
         <div class="icons-container">
           <div class="archade-icon-text">
             <div class="archade-icon icon-wrap">
-            <i class="fa-solid fa-gamepad"></i>
-               <h6>Archade</h6>
-            <p>$9/mo</p>
+       <img src="./assets/images/icon-arcade.svg" alt="archade icon">
+               <h6 class="archade-text">Archade</h6>
+            <p class="cost-text">$9/mo</p>
             </div>
           </div>
-          <div class="games-icon icon-wrap">
-            <i class="fa-solid fa-gamepad"></i>
-            <h6>Advanced</h6>
-            <p>$12/mo</p>
+          <div class="advanced icon-wrap">
+  <img src="./assets/images/icon-advanced.svg" alt="advanced icon">
+            <h6 class="advanced-text">Advanced</h6>
+            <p class="cost-text">$12/mo</p>
           </div>
-          <div class="games-2-icon icon-wrap">
-            <i class="fa-solid fa-gamepad"></i>
-            <h6>Pro</h6>
-            <p>$15/mo</p>
+          <div class="pro icon-wrap">
+        <img src="./assets/images/icon-pro.svg" alt="pro icon">
+            <h6 class="pro-text">Pro</h6>
+            <p class="cost-text">$15/mo</p>
           </div>
         </div>
         <div class="toogle-section">
-          <p>yearly</p>
+          <p class="year">monthly</p>
           <label class="switch">
   <input type="checkbox" class="checkbox">
   <span class="slider round"></span>
 </label>
-<p>monthly</p>
+<p class="monthly">Yearly</p>
         </div>
         <div class="plan-buttons">
   <a href="#">Go back</a>
         <button type="submit" class="button-plan ">next step</button>
         </div>
+        </div>
       </section>
       <section class="adds-on hidden">
+        <div class="container-adds">
        <h2 class="head-personal-infos">Pick add-ons</h2>
         <p  class='personal-paragraph'>add-ons help enhance your gaming experience</p>
         <div class="adds-borders">
@@ -162,8 +165,10 @@
   <a href="#">Go back</a>
         <button type="submit" class="button-plan ">next step</button>
         </div>
+        </div>
       </section>
       <section class="finish hidden">
+        <div class="container-finish">
          <h2 class="head-personal-infos">Finishing up</h2>
         <p class='personal-paragraph'>Double check everything looks ok before confirming</p>
          <div class="all-borders">
@@ -184,8 +189,24 @@
   <a href="#">Go back</a>
         <button type="submit" class="button-plan ">Confirm</button>
         </div>
+        </div>
+      </section>
+      <section class="thank-you">
+        <div class="container-thank-you hidden">
+          <img src="./assets/images/icon-thank-you.svg" alt="thank you icon">
+          <h1 class="thank-you-heading">Thank you!</h1>
+          <p class="thank-you-paragraph">Thanks for confirming your subscription! We hope you have fun 
+                using our platform. If you ever need support, please feel free 
+                to email us at support@loremgaming.com.</p>
+        </div>
       </section>
     </div>
+        <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/munyanezaarmel">Armel Munyaneza</a>.
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

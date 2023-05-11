@@ -11,8 +11,6 @@ body{
 .sidebar-steps {
   display: flex;
   padding: 20px;
-
-
 }
 .personal-paragraph{
     text-transform: uppercase;
@@ -37,16 +35,14 @@ margin-right: 10px;
 .sidebar {
   background-image: url("./assets/images/bg-sidebar-desktop.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  padding: 2rem 5rem 8.3rem 2rem;
 }
 .container{
-    display: flex;
-    padding: 20px;
+    display: flex;    
+margin: .8rem;
+    border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
 
 }
 .personal-infos{
@@ -67,8 +63,13 @@ margin-right: 10px;
   padding:20px;
   border-radius:12px;
     display: flex;
-    border: 1px solid hsl(213, 96%, 18%);
+    border: 1px solid hsl(229, 24%, 87%);
     margin:10px;
+      cursor: pointer;
+      transition: all 0.3s;
+}
+.adds-borders:hover{
+  border-color:hsl(213, 96%, 18%);
 }
 .finish-borders{
     padding:20px;
@@ -77,9 +78,16 @@ margin-right: 10px;
     justify-content: space-between;
     margin:10px;
 }
+.container-finish{
+  position: absolute;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
 .all-borders{
-  background-color: hsl(206, 94%, 87%) ;
+  background-color: hsl(217, 100%, 97%);
   margin:10px;
+  border-radius: 10px;
 }
 .head-personal-infos{
     color:hsl(213, 96%, 18%);
@@ -123,12 +131,30 @@ a{
 .icons-container{
     display: flex;
     justify-content: space-between;
-  margin: 20px;
 }
 .icon-wrap{
-    border:1px solid hsl(206, 94%, 87%);
-    height: 100px;
-    width: 100px;
+    border:1px solid hsl(229, 24%, 87%);
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left:20px;
+    cursor: pointer;
+      transition: all 0.3s;
+
+}
+.icon-wrap:hover{
+   border-color: hsl(243, 100%, 62%);;
+}
+
+.archade-icon{
+  padding:20px;
+}
+.advanced{
+  padding:20px;
+  
+}
+.pro{
+    padding:20px;
 }
 i {
   background-color: white;
@@ -152,8 +178,43 @@ i {
 }
 .toogle-section{
     display: flex;
-    background-color: hsl(228, 100%, 84%);
-    justify-content: space-between;
+  background-color: hsl(231, 100%, 99%);
+  align-items: center;
+  justify-content: center;
+    margin:20px;
+}
+.cost-text{
+  color:hsl(231, 11%, 63%);;
+}
+.archade-text{
+ padding:20px 0 10px;
+ font-weight: 700;
+      color:hsl(213, 96%, 18%);
+      font-size: 16px;
+}
+.advanced-text{
+  padding:20px 0 10px;
+  font-weight: 700;
+       color:hsl(213, 96%, 18%);
+        font-size: 16px;
+}
+.pro-text{
+ padding:20px 0 10px;
+ font-weight: 700;
+      color:hsl(213, 96%, 18%);
+       font-size: 16px;
+}
+.container-adds{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.year{
+  padding:20px;
+}
+.monthly{
+   padding:20px; 
 }
 .plan-buttons{
   display: flex;
@@ -190,6 +251,12 @@ label{
 
 .plan{
   padding:10px;
+}
+.plan-container{
+position: absolute;
+top:40%;
+left: 50%;
+transform: translate(-50%,-50%);
 }
 .slider:before {
   position: absolute;
@@ -241,4 +308,10 @@ margin: 10px;
 }
 .active{
   background-color:hsl(206, 94%, 87%);
+}
+.container-thank-you{
+  position:absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
